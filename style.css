@@ -508,14 +508,14 @@ h1.single {
 .sticky .bgWhite {
 	min-height: 257px;
 }
-h4.sub{
+h4.subT{
 	  color: #595959;
   font-size: 15px;
   font-weight: 400;
   margin: 0px 10px 5px 10px;
 
 	}
-.sticky h4.sub{
+.sticky h4.subT{
 
   margin-left: 0px;
 

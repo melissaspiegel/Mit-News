@@ -20,7 +20,7 @@ if($post->post_type == 'spotlights') {
 		   $myDate = get_field('event_date');
 		   $mySubtitle = get_field('subtitle');
 if($mySubtitle){ ?>
-		<h4 class="sub">	 <?php echo $mySubtitle; ?> </h4>
+		<h4 class="subT">	 <?php echo $mySubtitle; ?> </h4>
 		<p class="entry-summary">	
 			
 	<?php		

@@ -161,7 +161,7 @@ $myposts = get_posts($args);
 $y = 1 ;
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 <?php //echo $GLOBALS['wp_query']->request; ?>
-    <div id="singleBox"  class="col-xs-12 col-xs-B-6 col-sm-6 col-md-4 col-lg-4">
+    <div id="singleBox"  class="col-xs-12 col-xs-B-6 col-sm-6 col-md-4 col-lg-4 padding-right-mobile">
    
     <?php 
 	renderRegularCard($y, $post);

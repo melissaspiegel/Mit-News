@@ -442,12 +442,12 @@ function renderRegularCard($i, $post){ ?>
 	
 	
   		if(is_page('bibliotech-index') || (is_page_template('additionalPosts-biblio.php')) || (is_category('bibliotech_issues') || (is_tax() ) || is_page_template('additionalPosts-archives.php'))){
-	   		echo "<div class='biblioPad'>&nbsp;<a href='/news/bibliotech/' title='Bibliotech'>Bibliotech</a></div>"; 
+	   		echo "<div class='biblioPad'>&nbsp;<a href='/news/bibliotech-index/' title='Bibliotech'>Bibliotech</a></div>"; 
 	   }elseif((get_post_type( get_the_ID() ) == 'bibliotech') && (!is_page_template('additionalPosts-biblio.php'))){
 	   
 	   		echo "<div class='bilbioImg bilbioTechIcon'>
 	   		</div>";
-	   echo "<div class='biblioPadding'>&nbsp;<a href='/news/bibliotech/' title='Bibliotech'>Bibliotech</a>"; ?>
+	   echo "<div class='biblioPadding'>&nbsp;<a href='/news/bibliotech-index/' title='Bibliotech'>Bibliotech</a>"; ?>
 	   
 	    <span class="mitDate">
           <time class="updated"  datetime="<?php echo get_the_date(); ?>">&nbsp;&nbsp;<?php echo get_the_date(); ?></time>
