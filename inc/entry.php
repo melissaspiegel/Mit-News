@@ -20,8 +20,27 @@ if($post->post_type == 'spotlights') {
 		   $myDate = get_field('event_date');
 		   $mySubtitle = get_field('subtitle');
 if($mySubtitle){ ?>
-		<h4 class="subT">	 <?php echo $mySubtitle; ?> </h4>
-		<p class="entry-summary">	
+		<h4 class="subT">	 <?php 
+		
+		if(strlen($mySubtitle) > 40){
+			
+			  $stringCut = substr($mySubtitle, 0, 40);
+			  
+			   $mySubtitle = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';
+			   echo $mySubtitle;
+			}else{
+				echo $mySubtitle;
+				}
+		
+		
+		
+		?> </h4>
+		
+        
+        
+        
+        
+        <p class="entry-summary">	
 			
 	<?php		
 			

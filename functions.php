@@ -24,6 +24,7 @@ function mitlibnews_remove_dashboard_menu_items() {
 	if (!current_user_can('add_users')) {
 		remove_menu_page('edit-comments.php');
 		remove_menu_page('tools.php');
+		remove_menu_page('edit.php?post_type=html_snippet');
 	}
 }
 
@@ -155,20 +156,6 @@ function allow_contributor_uploads() {
 	$contributor = get_role('contributor');
 	$contributor->add_cap('upload_files');
 }
-
-
-//remove html snippets from prod site for contributor
-add_action( 'admin_init', 'remove_html_snippets' );
-function remove_html_snippets() {
-
-    global $user_ID;
-
-   if ( current_user_can('contributor') && !current_user_can('upload_files')) {
-	remove_menu_page( 'edit.php?post_type=html_snippet' );
-	
-    }
-}
-
 
 
 

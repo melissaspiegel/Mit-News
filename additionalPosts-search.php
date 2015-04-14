@@ -34,14 +34,15 @@ $args = array (
 	'sentence' =>true,
 	'posts_per_page'         => $limit,
 	'offset'                 => 9,
-	'order'                  => 'DESC',
-	'orderby'                => 'date',
+	'page' => 2,
+	//'order'                  => 'DESC',
+	//'orderby'                => 'date',
 );
 
 // The Query
 $the_query = new WP_Query( $args );
 
-
+//echo "<pre>";
 //print_r($the_query );
 
 
